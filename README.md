@@ -1,2 +1,9 @@
 # wi1d5ky.github.io
-My Blog
+Using Middleman to build my new blog
+
+## How to start?
+
+```
+bundle exec middleman
+```
+
