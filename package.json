@@ -1,0 +1,21 @@
+{
+  "name": "wildsky.surge.sh",
+  "version": "1.0.0",
+  "description": "running middleman",
+  "main": "none",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "bundle exec middleman serve",
+    "deploy": "cd build && surge && cd -"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wi1d5ky/wildsky.surge.sh.git"
+  },
+  "author": "wi1d5ky (Wildsky Fann)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/wi1d5ky/wildsky.surge.sh/issues"
+  },
+  "homepage": "https://github.com/wi1d5ky/wildsky.surge.sh#readme"
+}
