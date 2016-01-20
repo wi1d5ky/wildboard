@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "grunt": "grunt",
     "babel": "browserify -e script.jsx -t [ babelify --presets [ es2015 react ] --plugins [ transform-react-constant-elements transform-react-inline-elements ] ]",
-    "deploy": "grunt build ; cd public ; surge"
+    "deploy": "grunt build ; surge public/"
   },
   "devDependencies": {
     "babel-plugin-transform-react-constant-elements": "^6.1.20",
