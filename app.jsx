@@ -7,6 +7,13 @@ let ParseComponent = ParseReact.Component(React);
 import Header from "./components/header.jsx";
 import Footer from "./components/footer.jsx";
 
+let style = {
+	main: {
+		flex: "1",
+		color: "#333"
+	}
+};
+
 export default class App extends ParseComponent {
 	constructor(props) {
 		super(props);
@@ -26,7 +33,7 @@ export default class App extends ParseComponent {
 				flexDirection: "column"
 			}}>
 				<Header />
-				<ul style={{flex: 1}}>
+				<ul style={style.main}>
 					{
 						mngs.map((mng) => {
 							return <li key={mng.objectId}> {mng.content} </li>;

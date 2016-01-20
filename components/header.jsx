@@ -5,13 +5,17 @@ import PureComponent from 'react-pure-render/component';
 let style = {
 	header: {
 		padding: "1rem",
-		backgroundColor: "#FAFAFA"
+		backgroundColor: "#FAFAFA",
+
+		a: {
+			color: "#666",
+			textDecoration: "none"
+		}
 	},
 	title: {
 		display: "inline-block",
 		margin: "0 .5rem",
 		fontFamily: "Raleway",
-		color: "#666",
 		lineHeight: "3rem",
 		fontSize: "2rem"
 	},
@@ -42,7 +46,7 @@ export default class Header extends PureComponent {
 	render() {
 	return <header style={style.header}>
 				<h1 style={style.title}>
-					Wildboard
+					<a href="/" style={style.header.a}>Wildboard</a>
 				</h1>
 				<form style={style.form} onSubmit={this.addPost.bind(this)}>
 					<input type="text" style={style.form.input} ref="content"/>
