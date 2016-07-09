@@ -4,16 +4,20 @@
   "description": "用來暫時存放簡短資訊的小工具。",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy": "firebase deploy"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "firebase-tools": "^3.0.4"
+  },
   "dependencies": {},
   "repository": {
     "type": "git",
     "url": "https://github.com/wildskyf/wildboard/"
   },
   "keywords": [
-    "留言板", "記事簿"
+    "留言板",
+    "記事簿"
   ],
   "author": "wildsky",
   "license": "MIT",
